@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    max-width: 2000px;
+    min-width: 360px;
+    height: 60px;
+    background-color: rgb(56, 56, 56);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#MenuLista {
+    display: flex;
+    list-style: none;
+}
+
+#MenuLista li {
+    width: 120px;
+    height: 60px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#menu a:hover {
+    background-color: gray;
+    transition-duration: 0.5s;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sessao {
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.content {
+    flex: 1;
+    margin-right: 80px;
+    margin-left: 40px;
+}
+
+.container-imagem {
+    flex: 0 0 325px; /* Define a largura fixa para a imagem */
+    margin-right: 40px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
+main {
+    line-height: 1.5;
+}
+
+.empresas-colaborei {
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagens-logos-empresas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagens-logos-empresas img {
+    margin: 0 10px; 
+    display: inline-block;
+  }
+  
+  .imagens-logos-empresas img:hover {
+    opacity: 0.7;
+  }
+
+  .lista-nao-ordenada {
+    margin-left: 100px;
+  }
+
+  .lista-nao-ordenada ul {
+    margin-left: 25px;
+  }
+
+  /* Container Lista Ordenada e Video Experiencia Profissional */
+  .container-lista-ordenada-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .lista-ordenada{
+    margin-left: 100px;
+  }
+
+  .box-lista-ordenada {
+    float: left;
+    width: 50%;
+  }
+
+  .lista-ordenada ol {
+    margin-left: 25px;
+  }
+
+  .lista-ordenada ul {
+    margin-left: 25px;
+  }
+
+  .portfolio-mobile {
+    display: none;
+  }
+
+  .box-video {
+    float: right;
+    width: 50%;
+    margin-left: 70px;
+  }
+
+  /* Estilizando a tabela */
+
+  .contato-table {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .contato-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .contato-table th,
+  .contato-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .contato-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .contato-table td {
+    font-size: 16px;
+  }
+
+  .contato-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .contato-table a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Estilo portfolio */
+
+  .portfolio-titulo {
+    text-align: center;
+  }
+
+  .portfolio-table {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .portfolio-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .portfolio-table th,
+  .portfolio-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .portfolio-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .portfolio-table td {
+    font-size: 16px;
+  }
+
+  .portfolio-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .portfolio-table iframe,
+  .portfolio-table img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .lista-de-definicoes {
+    margin-left: 60px;
+  }
+
+  .box-lista-de-definicoes{
+    background-color: #f5f5f5;
+  }
+
+  .pre {
+    padding: 20px;
+  }
+
+  .clipe {
+    width: 90%;
+    border: 5px ridge silver;
+  }
+
+  /* CSS Forms Contato */
+
+  .form-contato {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.form-contato input[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-contato input[type="submit"]:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+  @media (max-width: 767px) {
+   
+    
+    .portfolio-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .form-contato {
+        width: 80%;
+      }
+
+      /* Container Lista Ordenada */
+      
+        .container-lista-ordenada-video {
+          align-items: start;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+          left: 0;
+          padding: 0;
+          margin: 0;
+        }
+            
+        .box-lista-ordenada {
+          width: 90%;
+          margin-left: 25px;
+        }
+      
+        .box-video {
+          align-items: start;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+          padding-bottom: 56.25%;
+          overflow: hidden;
+          width: 85%;
+        }
+        .video {
+          align-items: start;
+          flex-direction: column;
+          width: 85%;
+        }
+        .box-video iframe {
+          align-items: start;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 85%;
+          height: 85%;
+        }
+
+        .lista-ordenada {
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+      /*Fim*/
+
+      .clipe {
+        width: 50%;
+      }
+
+
+      
+      .portfolio-mobile > div {
+        margin-bottom: 20px;
+      }
+      
+      .portfolio-mobile h3,
+      .portfolio-mobile p {
+        margin: 10px 0;
+      }
+    
+
+    .canon {
+        background-color: #f5f5f5;
+    }  
+    body {
+      font-size: 14px;
+    }
+
+    .portfolio-mobile {
+        display: block;
+      }
+  
+    #menu {
+      height: auto;
+      padding: 5px;
+    }
+  
+    #MenuLista {
+      flex-direction: column;
+    }
+  
+    #MenuLista li {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  
+    /* Sessao container mobile */
+    
+    .sessao {
+      flex-direction: column;
+    }
+    
+    .content {
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  
+    .container-imagem {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .empresas-colaborei {
+      padding: 10px;
+    }
+    
+    .lista-nao-ordenada {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .imagens-logos-empresas {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .imagens-logos-empresas img {
+      margin: 5px;
+    }
+  
+    .contato-table {
+      margin-left: 15px;
+      margin-top: 20px;
+      margin-right: 10px;
+      overflow-x: auto;
+    }
+  
+    .portfolio-table {
+      display: none;
+    }
+  
+    .lista-de-definicoes {
+      margin-left: 10px;
+    }
+
+    .pre {
+        display: none;
+      }
+
+    
+  }
